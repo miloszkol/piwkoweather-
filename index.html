@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miłosz Kołkowski">
+    <title>Piwko Weather - pogoda dla prawdziwych gitów</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <script src="https://kit.fontawesome.com/d16c4e3b37.js" crossorigin="git"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" style="color: white;">Piwko Weather 🍻</a></h1>
+    </header>
+    <nav>
+        <i class='fas fa-location-arrow'></i>
+        <input type="text" placeholder="Wprowadź lokalizację 🍻" class="search">
+        <button class="search-button"><i class="fas fa-search"></i></button>
+    </nav>
+    <main>
+        <div class="lang-select">
+            <div class="lang-pl">
+                <img class="select-pl" src="img/lang-pl.png" alt="">
+            </div>
+            <div class="lang-en">
+                <img class="select-en" src="img/lang-en.png" alt="">
+            </div>
+        </div>
+        <div class="date">
+            <div class="time" id="time">00:00</div>
+            <div class="date" id="date">poniedziałek, 1 stycznia</div>
+        </div>
+        <div class="location" style="color: black;"><i class='fas fa-location-arrow'></i> Nie podano lokalizacji! 🍻</div>
+        <div class="current-weather">
+            <div class="current-weather-location1"></div>
+            <p class="current-weather-location search-pl">Pogoda dla: brak lokalizacji 🍻</p>
+            <p class="current-weather-location search-en"></p>
+            <div class="weather-content">
+                <img class="weather-img">
+                <div class="temp-container">
+                    <span class="temp">-</span>
+                </div>
+                <div class="description"></div>
+            </div>
+        </div>
+        <p class="forecast-text">Prognoza na następne dni 🍻🍻🍻</p>
+        <div class="forecast">
+            <div class="empty-forecast"><p>-</p></div>
+            <div class="empty-forecast"><p>-</p></div>
+            <div class="empty-forecast"><p>-</p></div>
+            <div class="empty-forecast"><p>-</p></div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy 2077 Piwko weather</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
